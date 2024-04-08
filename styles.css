@@ -67,7 +67,7 @@ body {
 #projects {
   padding: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   row-gap: 20px;
   column-gap: 20px;
 }
@@ -76,6 +76,9 @@ body {
   height: 400px;
   background-color: gray;
   border-radius: 5px;
+}
+.project-tile:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .card-link {
   height: 100%;
