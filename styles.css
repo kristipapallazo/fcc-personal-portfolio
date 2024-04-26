@@ -73,13 +73,13 @@ body {
 #projects {
   padding: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   row-gap: 20px;
   column-gap: 20px;
 }
 .project-tile {
   /* the card */
-  height: 400px;
+  height: auto;
   background-color: gray;
   border-radius: 5px;
 }
@@ -96,6 +96,7 @@ body {
   width: 100%;
   flex: 1;
   border-radius: 5px;
+  /* object-fit: cover; */
 }
 .card-tile {
   text-align: center;
@@ -180,7 +181,7 @@ a {
   #projects {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 10px;
+    row-gap: 20px;
     /* column-gap: 20px; */
   }
   .contact-link {
@@ -194,6 +195,9 @@ a {
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   /* for tablet */
+  .card-img {
+    object-fit: scale-down;
+  }
   #projects {
     display: grid;
     grid-template-columns: 1fr 1fr !important;
